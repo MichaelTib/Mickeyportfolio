@@ -1,46 +1,61 @@
+# Personal Portfolio Website
 
-# Portfolio Website
-
-This project is a simple portfolio website designed to showcase skills, projects, and achievements.
+## Overview
+This project is a personal portfolio website designed to showcase the work and skills of a Computer Science student. The website includes sections for home, about, projects, and contact information, allowing visitors to learn more about the individual and their work.
 
 ## Features
+- **Responsive Design**: The website is designed to be mobile-friendly and adjusts to different screen sizes.
+- **Admin Dashboard**: An admin panel for managing projects and viewing contact messages.
+- **Database Integration**: Utilizes a MySQL database to store project and contact information.
+- **User  Authentication**: Admin login functionality to secure the admin dashboard.
 
-- **Responsive Design**: The website is styled to look great on various devices using CSS.
-- **Interactive Elements**: JavaScript enhances the user experience with dynamic interactions.
-- **Organized Structure**: Separate files for HTML, CSS, and JavaScript ensure clean and maintainable code.
+## Technologies Used
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: PHP
+- **Database**: MySQL
+- **Frameworks/Libraries**: None (pure PHP and MySQL)
 
 ## File Structure
+```
+MultipleFiles/
+│
+├── db.php                # Database connection class
+├── admin.php             # Admin dashboard for managing projects and contacts
+├── contacts.php          # Class for handling contact messages
+├── projects.php          # Class for managing projects
+├── user.php              # User authentication class
+├── index.php             # Main website page
+├── adminstyle.css        # CSS for admin dashboard
+├── indexstyle.css        # CSS for main website
+├── profile.jpg           # Profile image
+├── github.png            # GitHub icon
+├── liknee.png            # LinkedIn icon
+├── insta.jpg             # Instagram icon
+├── tele.png              # Telegram icon
+└── README.md             # Project documentation
+```
 
-```
-portfolio/
-├── assets/          # Contains images or other media files
-├── image.css        # CSS file for styling specific images
-├── index.html       # Main HTML file of the website
-├── script.js        # JavaScript file for interactivity
-├── style.css        # Main CSS file for overall styling
-```
+## Installation
+1. Clone the repository to your local machine.
+2. Create a MySQL database named `portfolios`.
+3. Import the necessary SQL tables for `projects` and `contacts`.
+4. Update the database connection details in `db.php` if necessary.
+5. Open `index.php` in your web browser to view the portfolio.
 
 ## Usage
+- **Viewing Projects**: Navigate to the "Projects" section to view all projects.
+- **Contacting**: Use the contact form in the "Contact Me" section to send messages.
+- **Admin Access**: Access the admin dashboard via `admin.php` to manage projects and view contact messages.
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/portfolio.git
-   ```
-
-2. Open the `index.html` file in your web browser to view the website.
-
-3. Modify the `style.css` and `script.js` files to customize the design and functionality.
-
-## Customization
-
-- Update the content in `index.html` to reflect your personal or professional details.
-- Replace the images in the `assets/` folder with your own visuals.
-- Use `image.css` for any custom styling for images.
+## Contributing
+Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
 
 ## License
+This project is open-source and available under the MIT License.
 
-This project is open-source and available under the [MIT License](LICENSE).
+## Author
+- **Name**: Michael
+- **Email**: mike3456@gmail.com
 
----
-
-Feel free to fork this repository and customize it to create your own portfolio website!
+## Acknowledgments
+- Thanks to all the resources and tutorials that helped in the development of this portfolio website.
